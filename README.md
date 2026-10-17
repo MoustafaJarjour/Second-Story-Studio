@@ -14,11 +14,11 @@ pinned: false
 
 **Keep the story. Change the object.** A fictional Beirut studio helps customers redesign meaningful furniture and textiles. Tala is its OpenAI-powered virtual concierge.
 
-**[Watch the narrated demonstration](demo/demo.mp4)** · **[Try the deployed Hugging Face Space](https://huggingface.co/spaces/MoustafaJarjour/second-story-studio)** · **[Submission checklist](SUBMISSION_CHECKLIST.md)**
+**[Download the narrated demonstration](https://github.com/MoustafaJarjour/Second-Story-Studio/raw/refs/heads/main/demo/demo.mp4)** · **[Try the deployed Hugging Face Space](https://huggingface.co/spaces/MoustafaJarjour/second-story-studio)** · **[Submission checklist](SUBMISSION_CHECKLIST.md)**
 
-[![Video preview](demo/poster.jpg)](demo/demo.mp4)
+[![Video preview](demo/poster.jpg)](https://github.com/MoustafaJarjour/Second-Story-Studio/raw/refs/heads/main/demo/demo.mp4)
 
-The **4:54** video demonstrates the required business artifacts, persona and instructions, all three routing paths, real model-selected tool calls, saved records, conversation memory and reset, logged reflection, and the public deployment. English captions are burned into the video and supplied separately in [WebVTT format](demo/demo.en.vtt). Chapter timestamps are listed below.
+The **4:54** video demonstrates the required business artifacts, persona and instructions, all three routing paths, real model-selected tool calls, saved records, conversation memory and reset, logged reflection, and the public deployment. English captions are burned into the video and supplied separately in [WebVTT format](demo/demo.en.vtt). Chapter timestamps are listed below. GitHub’s file viewer does not preview this MP4; download it to play locally.
 
 ## Run locally
 

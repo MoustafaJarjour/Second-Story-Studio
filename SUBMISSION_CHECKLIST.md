@@ -4,7 +4,7 @@ EECE 503P/798S — C3: Introduction to Agents
 Business: Second Story Studio · Agent: Tala · Student: Moustafa Jarjour
 
 - **Repository:** https://github.com/MoustafaJarjour/Second-Story-Studio
-- **Video:** [demo/demo.mp4](demo/demo.mp4), 4:54, with narration, captions, and embedded chapters
+- **Video:** [download demo/demo.mp4](https://github.com/MoustafaJarjour/Second-Story-Studio/raw/refs/heads/main/demo/demo.mp4), 4:54, with narration, captions, and embedded chapters
 - **Public deployment:** https://huggingface.co/spaces/MoustafaJarjour/second-story-studio
 
 | Assignment item | Submitted artifact / observed evidence | Video |
