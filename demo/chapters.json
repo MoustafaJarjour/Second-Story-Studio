@@ -1,0 +1,79 @@
+[
+  {
+    "id": "intro",
+    "title": "Overview: an agent-powered business assistant",
+    "start_seconds": 0,
+    "duration_seconds": 25.917,
+    "timestamp": "00:00:00"
+  },
+  {
+    "id": "files",
+    "title": "Required business files and runnable notebook",
+    "start_seconds": 25.917,
+    "duration_seconds": 26.833,
+    "timestamp": "00:00:25"
+  },
+  {
+    "id": "identity",
+    "title": "Persona and instructions: clearly separated",
+    "start_seconds": 52.75,
+    "duration_seconds": 25.667,
+    "timestamp": "00:00:52"
+  },
+  {
+    "id": "tools",
+    "title": "Three routes and distinct tool contracts",
+    "start_seconds": 78.417,
+    "duration_seconds": 27.833,
+    "timestamp": "00:01:18"
+  },
+  {
+    "id": "known",
+    "title": "Live general question: grounded answer, no lead logging",
+    "start_seconds": 106.25,
+    "duration_seconds": 23.167,
+    "timestamp": "00:01:46"
+  },
+  {
+    "id": "lead",
+    "title": "Live lead collection and conversation memory",
+    "start_seconds": 129.417,
+    "duration_seconds": 26.667,
+    "timestamp": "00:02:09"
+  },
+  {
+    "id": "logs",
+    "title": "Unknown question, separate suggestion, and actual logs",
+    "start_seconds": 156.083,
+    "duration_seconds": 25.833,
+    "timestamp": "00:02:36"
+  },
+  {
+    "id": "reflection",
+    "title": "Reflection bonus: original draft and real correction",
+    "start_seconds": 181.917,
+    "duration_seconds": 30.167,
+    "timestamp": "00:03:01"
+  },
+  {
+    "id": "reset",
+    "title": "New conversation resets short-term memory",
+    "start_seconds": 212.083,
+    "duration_seconds": 20.417,
+    "timestamp": "00:03:32"
+  },
+  {
+    "id": "hosted",
+    "title": "Bonus: the deployed Hugging Face Space",
+    "start_seconds": 232.5,
+    "duration_seconds": 25.5,
+    "timestamp": "00:03:52"
+  },
+  {
+    "id": "checks",
+    "title": "Verification and complete submission",
+    "start_seconds": 258.0,
+    "duration_seconds": 36.0,
+    "timestamp": "00:04:18"
+  }
+]

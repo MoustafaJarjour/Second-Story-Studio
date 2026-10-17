@@ -1,0 +1,220 @@
+[
+  {
+    "timestamp_utc": "2026-10-17T10:19:59+00:00",
+    "kind": "live_chat",
+    "user": "What does a Second Story Consultation cost, and how long is it?",
+    "reply": "A Second Story Consultation at Second Story Studio costs USD 25 and lasts 20 minutes. This consultation is designed to discuss your object's condition, the features you want to preserve, and possible transformations. The fee is credited toward an approved project. What would you like to preserve about your piece?",
+    "route": {
+      "intent": "general_question",
+      "secondary_intents": [],
+      "handler": "handle_general_question",
+      "reason": "General question or conversational reply.",
+      "message": "What does a Second Story Consultation cost, and how long is it?",
+      "lead_active": false,
+      "actions": [
+        "answer_any_answerable_business_questions"
+      ],
+      "candidate_tools": []
+    },
+    "tools": [],
+    "reflection": {
+      "timestamp_utc": "2026-10-17T10:19:58+00:00",
+      "original_draft": "A Second Story Consultation at Second Story Studio costs USD 25 and lasts for 20 minutes. This consultation is designed to discuss your object's condition, the features you want to preserve, and possible transformations. The fee is credited toward an approved project. What would you like to preserve about your piece?",
+      "revised_reply": "A Second Story Consultation at Second Story Studio costs USD 25 and lasts 20 minutes. This consultation is designed to discuss your object's condition, the features you want to preserve, and possible transformations. The fee is credited toward an approved project. What would you like to preserve about your piece?",
+      "issues": [],
+      "status": "revised",
+      "error_type": null,
+      "changed": true,
+      "success": true,
+      "log_success": true
+    },
+    "success": true
+  },
+  {
+    "timestamp_utc": "2026-10-17T10:20:17+00:00",
+    "kind": "live_chat",
+    "user": "I'd like the team to contact me about redesigning an old chair while keeping its carved back.",
+    "reply": "I can help with that. May I have your name and email address, please? This will allow the team to contact you about redesigning your chair while preserving its carved back. If you want, you can share any additional details or what you’d like to preserve about this piece.",
+    "route": {
+      "intent": "lead_collection",
+      "secondary_intents": [],
+      "handler": "handle_lead_collection",
+      "reason": "Explicit follow-up or booking interest.",
+      "message": "I'd like the team to contact me about redesigning an old chair while keeping its carved back.",
+      "lead_active": true,
+      "actions": [
+        "answer_any_answerable_business_questions",
+        "record_complete_interest_or_ask_only_for_missing_details"
+      ],
+      "candidate_tools": [
+        "record_customer_interest"
+      ]
+    },
+    "tools": [],
+    "reflection": {
+      "timestamp_utc": "2026-10-17T10:20:15+00:00",
+      "original_draft": "I can help with that. May I have your name and email address, please? This will allow the team to contact you about redesigning your chair while preserving its carved back. If you want, you can share any additional details or what you’d like to preserve about this piece.",
+      "revised_reply": "I can help with that. May I have your name and email address, please? This will allow the team to contact you about redesigning your chair while preserving its carved back. If you want, you can share any additional details or what you’d like to preserve about this piece.",
+      "issues": [],
+      "status": "approved",
+      "error_type": null,
+      "changed": false,
+      "success": true,
+      "log_success": true
+    },
+    "success": true
+  },
+  {
+    "timestamp_utc": "2026-10-17T10:20:29+00:00",
+    "kind": "live_chat",
+    "user": "My name is Dana Demo and my email is dana.demo@example.com.",
+    "reply": "Thank you, Dana Demo. I've recorded your interest in redesigning your old chair while keeping its carved back. The team will contact you to discuss the project further. If you have any more questions or things you'd like to share about the piece, feel free to let me know. What would you like to preserve about this chair?",
+    "route": {
+      "intent": "lead_collection",
+      "secondary_intents": [],
+      "handler": "handle_lead_collection",
+      "reason": "Reply during active lead collection.",
+      "message": "My name is Dana Demo and my email is dana.demo@example.com.",
+      "lead_active": true,
+      "actions": [
+        "answer_any_answerable_business_questions",
+        "record_complete_interest_or_ask_only_for_missing_details"
+      ],
+      "candidate_tools": [
+        "record_customer_interest"
+      ]
+    },
+    "tools": [
+      {
+        "name": "record_customer_interest",
+        "arguments": {
+          "email": "dana.demo@example.com",
+          "name": "Dana Demo",
+          "message": "Redesigning an old chair while keeping its carved back."
+        },
+        "result": {
+          "success": true,
+          "message": "Customer interest recorded."
+        },
+        "deduplicated": false
+      }
+    ],
+    "reflection": {
+      "timestamp_utc": "2026-10-17T10:20:27+00:00",
+      "original_draft": "Thank you, Dana Demo. I've recorded your interest in redesigning your old chair while keeping its carved back. The team will contact you to discuss the project further. If you have any more questions or things you'd like to share about the piece, feel free to let me know. What would you like to preserve about this chair?",
+      "revised_reply": "Thank you, Dana Demo. I've recorded your interest in redesigning your old chair while keeping its carved back. The team will contact you to discuss the project further. If you have any more questions or things you'd like to share about the piece, feel free to let me know. What would you like to preserve about this chair?",
+      "issues": [],
+      "status": "approved",
+      "error_type": null,
+      "changed": false,
+      "success": true,
+      "log_success": true
+    },
+    "success": true
+  },
+  {
+    "timestamp_utc": "2026-10-17T10:21:13+00:00",
+    "kind": "live_chat",
+    "user": "Do you offer a five-year warranty? Also, please add Sunday workshops.",
+    "reply": "Second Story Studio does not have information published about a five-year warranty on projects or services, so I have recorded this question for the team to review. Also, your suggestion to add Sunday workshops has been noted and shared with the team. If you have any other requests or questions, feel free to ask!",
+    "route": {
+      "intent": "feedback_or_unanswered",
+      "secondary_intents": [],
+      "handler": "handle_feedback_or_unanswered",
+      "reason": "The answer logic reported an unanswered business question.",
+      "message": "Do you offer a five-year warranty? Also, please add Sunday workshops.",
+      "lead_active": false,
+      "actions": [
+        "answer_any_answerable_business_questions",
+        "acknowledge_and_record_unanswered_question",
+        "acknowledge_and_record_customer_feedback"
+      ],
+      "candidate_tools": [
+        "record_feedback",
+        "record_customer_feedback"
+      ]
+    },
+    "tools": [
+      {
+        "name": "record_feedback",
+        "arguments": {
+          "question": "Does Second Story Studio offer a five-year warranty on projects or services?"
+        },
+        "result": {
+          "success": true,
+          "message": "Unanswered question recorded."
+        },
+        "deduplicated": false
+      },
+      {
+        "name": "record_customer_feedback",
+        "arguments": {
+          "feedback": "Suggestion to add Sunday workshops at Second Story Studio."
+        },
+        "result": {
+          "success": true,
+          "message": "Customer feedback recorded."
+        },
+        "deduplicated": false
+      }
+    ],
+    "reflection": {
+      "timestamp_utc": "2026-10-17T10:21:12+00:00",
+      "original_draft": "Second Story Studio does not have information published about a five-year warranty on projects or services, so I have recorded this question for the team to review. Also, your suggestion to add Sunday workshops has been noted and shared with the team. If you have any other requests or questions, feel free to ask!",
+      "revised_reply": "Second Story Studio does not have information published about a five-year warranty on projects or services, so I have recorded this question for the team to review. Also, your suggestion to add Sunday workshops has been noted and shared with the team. If you have any other requests or questions, feel free to ask!",
+      "issues": [],
+      "status": "approved",
+      "error_type": null,
+      "changed": false,
+      "success": true,
+      "log_success": true
+    },
+    "success": true
+  },
+  {
+    "kind": "controlled_reflection_test",
+    "draft_source": "Deliberately flawed test input",
+    "reflection": {
+      "timestamp_utc": "2026-10-17T10:22:31+00:00",
+      "original_draft": "The consultation costs USD 80 and lasts one hour. Your appointment is confirmed for tomorrow.",
+      "revised_reply": "A Second Story Consultation costs USD 25 and lasts about 20 minutes. This design consultation helps discuss your object's condition, the features you'd like to preserve, and possible transformations. What would you like to preserve about this piece?",
+      "issues": [],
+      "status": "revised",
+      "error_type": null,
+      "changed": true,
+      "success": true,
+      "log_success": true
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-17T10:23:00+00:00",
+    "kind": "live_chat",
+    "user": "Do you know my name from this conversation?",
+    "reply": "I don't know your name from our conversation so far. If you'd like to share it, that can help if you want to request a follow-up or project discussion. What would you like to preserve about any piece you have?",
+    "route": {
+      "intent": "general_question",
+      "secondary_intents": [],
+      "handler": "handle_general_question",
+      "reason": "General question or conversational reply.",
+      "message": "Do you know my name from this conversation?",
+      "lead_active": false,
+      "actions": [
+        "answer_any_answerable_business_questions"
+      ],
+      "candidate_tools": []
+    },
+    "tools": [],
+    "reflection": {
+      "timestamp_utc": "2026-10-17T10:22:59+00:00",
+      "original_draft": "I don't know your name from our conversation so far. If you'd like to share it, that can help if you want to request a follow-up or project discussion. What would you like to preserve about any piece you have?",
+      "revised_reply": "I don't know your name from our conversation so far. If you'd like to share it, that can help if you want to request a follow-up or project discussion. What would you like to preserve about any piece you have?",
+      "issues": [],
+      "status": "approved",
+      "error_type": null,
+      "changed": false,
+      "success": true,
+      "log_success": true
+    },
+    "success": true
+  }
+]

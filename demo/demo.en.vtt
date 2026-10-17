@@ -1,0 +1,214 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.108
+This is Second Story Studio, a fictional creative reuse studio in Beirut. Tala is its virtual
+concierge.
+
+2
+00:00:09.108 --> 00:00:16.073
+This demonstration follows the assignment requirements, showing the business files, identity,
+router, real
+
+3
+00:00:16.073 --> 00:00:22.502
+model-selected tools, conversation memory, reflection, and the deployed application. All customer
+details
+
+4
+00:00:22.502 --> 00:00:24.645
+used here are fictional.
+
+5
+00:00:25.917 --> 00:00:33.239
+The repository includes the actual business summary and a two-page business profile PDF, alongside
+the main
+
+6
+00:00:33.239 --> 00:00:40.104
+notebook, application, and dependency list. Both business sources are loaded into the system
+prompt. The
+
+7
+00:00:40.104 --> 00:00:47.885
+profile defines the mission, services, team, and value proposition. The real API key remains in a
+private
+
+8
+00:00:47.885 --> 00:00:51.546
+environment file; only an empty example is submitted.
+
+9
+00:00:52.750 --> 00:01:00.215
+Persona describes who Tala is: a warm, practical virtual concierge. Instructions separately define
+how it
+
+10
+00:01:00.215 --> 00:01:08.177
+must behave. These include grounding facts in the supplied knowledge, asking only for missing lead
+details,
+
+11
+00:01:08.177 --> 00:01:15.145
+logging unanswered business questions, and reporting tool actions truthfully. The notebook labels
+these as
+
+12
+00:01:15.145 --> 00:01:17.135
+two distinct prompt components.
+
+13
+00:01:18.417 --> 00:01:25.190
+The classifier selects general questions, lead collection, or feedback and unanswered-question
+handling. A
+
+14
+00:01:25.190 --> 00:01:33.006
+dispatcher invokes the matching handler. The model then chooses appropriate tools, and a separate
+tool
+
+15
+00:01:33.006 --> 00:01:38.738
+dispatcher validates their arguments. The required customer-interest and unanswered-question tools
+are
+
+16
+00:01:38.738 --> 00:01:44.990
+implemented. A third tool handles customer suggestions without overloading the unanswered-question
+schema.
+
+17
+00:01:46.250 --> 00:01:52.960
+This is the actual Gradio ChatInterface, connected to OpenAI. A consultation question receives the
+published
+
+18
+00:01:52.960 --> 00:02:00.118
+price of twenty-five US dollars and duration of twenty minutes. The audit view shows the actual
+
+19
+00:02:00.118 --> 00:02:06.828
+general-question route and no logging tool. Ordinary business questions do not require the
+customer to
+
+20
+00:02:06.828 --> 00:02:08.170
+provide contact details.
+
+21
+00:02:09.417 --> 00:02:17.053
+The customer requests team follow-up about a chair, keeping the carved back. Tala asks for the
+missing name
+
+22
+00:02:17.053 --> 00:02:23.841
+and email. Those details arrive in a separate message. The agent retains the earlier project
+description,
+
+23
+00:02:23.841 --> 00:02:30.629
+calls the customer-interest tool, and confirms the saved record only after a successful tool
+receipt. The
+
+24
+00:02:30.629 --> 00:02:34.871
+request does not confirm an appointment or send an email.
+
+25
+00:02:36.083 --> 00:02:43.113
+This mixed message asks about an unpublished warranty and suggests Sunday workshops. The model
+records the
+
+26
+00:02:43.113 --> 00:02:48.385
+unresolved warranty through record feedback, and the workshop suggestion through the separate
+
+27
+00:02:48.385 --> 00:02:54.976
+customer-feedback tool. The evidence view shows actual JSON records and success receipts. The lead
+record
+
+28
+00:02:54.976 --> 00:03:00.688
+contains the fictional contact details and the chair description from the earlier turn.
+
+29
+00:03:01.917 --> 00:03:08.597
+Reflection runs before the final reply is displayed. To make correction visible, this controlled
+test
+
+30
+00:03:08.597 --> 00:03:15.278
+deliberately supplies an incorrect price, duration, and booking promise. The second OpenAI call
+checks the
+
+31
+00:03:15.278 --> 00:03:21.513
+trusted business instructions and produces a corrected customer-facing reply. Both original and
+revised text
+
+32
+00:03:21.513 --> 00:03:29.530
+are logged. This flawed draft is explicitly a test input, not a claim that the normal model
+spontaneously
+
+33
+00:03:29.530 --> 00:03:30.866
+made these mistakes.
+
+34
+00:03:32.083 --> 00:03:38.722
+Starting a new conversation clears the visible chat and its private session state. When asked
+whether it
+
+35
+00:03:38.722 --> 00:03:45.361
+knows the earlier customer name, Tala says that no name has been provided in the new conversation.
+
+36
+00:03:45.361 --> 00:03:51.219
+Previously saved business records remain in the logs; clearing a conversation does not delete
+them.
+
+37
+00:03:52.500 --> 00:04:00.309
+Here is the real public Hugging Face deployment. It serves the same Gradio assistant and answers a
+business
+
+38
+00:04:00.309 --> 00:04:07.250
+question using the server-side OpenAI key. The Space is running on ZeroGPU hosting, while model
+inference
+
+39
+00:04:07.250 --> 00:04:14.192
+remains on OpenAI. An unused startup compatibility function is never called by customer requests,
+so the
+
+40
+00:04:14.192 --> 00:04:16.795
+chat does not request GPU work.
+
+41
+00:04:18.000 --> 00:04:25.846
+The recorded test output shows fifty-two passing offline checks. They cover routing, validation,
+tool
+
+42
+00:04:25.846 --> 00:04:33.693
+protocols, session isolation, retries, and reflection failures. The notebook also runs its non-
+network cells
+
+43
+00:04:33.693 --> 00:04:40.978
+successfully. The GitHub submission contains the source, required business artifacts, video, and
+synthetic
+
+44
+00:04:40.978 --> 00:04:48.264
+evidence. Private credentials and personal customer logs are excluded. This completes the
+demonstrated
+
+45
+00:04:48.264 --> 00:04:52.748
+checklist, including reflection and a running hosted application.

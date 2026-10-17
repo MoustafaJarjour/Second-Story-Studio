@@ -1,0 +1,21 @@
+{
+  "source_space": "https://huggingface.co/spaces/MoustafaJarjour/second-story-studio",
+  "deployed_revision": "e941bb411d7225d940bd1a7efe7f82253a980089",
+  "submission_additions": "GitHub documentation, browser recording companion, video, and fictional-customer evidence",
+  "sha256": {
+    "app.py": "574808c2a0995ba3b37ed7c1aa8954e698bfa60d021d4626d12bb2119eb7e130",
+    "agent_interaction.py": "75a11a9374af2dfdbed158499b98de35dbc54b3621067070d9b8f28beebde5a5",
+    "business_tools.py": "5f21e776de907ad9b944a2df6312b4ed806fe8e5554e33fd2441fd60816c79cd",
+    "chat_setup.py": "9c9f0e3c1560e124314acc2120348773f335a64f7274559794d51e4910b1b123",
+    "gradio_interface.py": "cdffb139871cedcd20039c50678a4afe0e240c009b33d0054cf44101ba036e25",
+    "router.py": "206f2e5aa963c0f21d2904dd2e52c126c68db09a226d4ccada9191fd72a9be39",
+    "reflection.py": "3dfc760862c62f97a5c9917d4d965e29d3298a3bfb7a73bf45cf09d63bc6bf1d",
+    "agent_identity.md": "b68e0a4bf23b53e86862626e4a16d5dd8c07b040c5299b5f80cac30505a98bae",
+    "system_prompt.txt": "f861e2ea19382fde5f9383a05c86723c8cb196bb6642323556a971b3a3b40eba",
+    "tool_schemas.json": "9ee08212a5144ccde4af33e88cfa79fb6757f2e0e86765998be02aa717e206ff",
+    "business_agent.ipynb": "aae243175f26e9d272c275d7b35536d45fb12ff350bf077b3b457ea6c46d39f1",
+    "requirements.txt": "2386646c6fee6b502ba6b3af9cdd04ae84dd71c7aa950ca2d90afcbf7267f337",
+    "me/business_summary.txt": "cf945c964ec9f2e412aa00265e73a14a7472c3d3be4677b2004933c269ec265c",
+    "me/about_business.pdf": "9cf470c331d942caf898392d20e7df17455e983d14d9821e3aa6053983cb7836"
+  }
+}

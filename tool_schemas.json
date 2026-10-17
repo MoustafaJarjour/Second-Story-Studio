@@ -1,0 +1,124 @@
+{
+  "tools": [
+    {
+      "name": "record_customer_interest",
+      "description": "Record customer interest after name, email, and notes are provided.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Customer-provided email address.",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "description": "Customer-provided name.",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string",
+            "description": "Customer's project or service interest and relevant notes.",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "email",
+          "name",
+          "message"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "description": "Whether the record was logged successfully."
+          },
+          "message": {
+            "type": "string",
+            "description": "Brief confirmation or explanation of failure."
+          }
+        },
+        "required": [
+          "success",
+          "message"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "record_feedback",
+      "description": "Record a business question the available knowledge cannot answer.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string",
+            "description": "Unanswered business question with necessary context.",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "description": "Whether the record was logged successfully."
+          },
+          "message": {
+            "type": "string",
+            "description": "Brief confirmation or explanation of failure."
+          }
+        },
+        "required": [
+          "success",
+          "message"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "record_customer_feedback",
+      "description": "Record a customer complaint, suggestion, or explicit feedback request.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "feedback": {
+            "type": "string",
+            "description": "Customer's complaint, suggestion, or explicitly requested feedback.",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "feedback"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "description": "Whether the record was logged successfully."
+          },
+          "message": {
+            "type": "string",
+            "description": "Brief confirmation or explanation of failure."
+          }
+        },
+        "required": [
+          "success",
+          "message"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ]
+}

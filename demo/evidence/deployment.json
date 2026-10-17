@@ -1,0 +1,10 @@
+{
+  "space": "https://huggingface.co/spaces/MoustafaJarjour/second-story-studio",
+  "app": "https://moustafajarjour-second-story-studio.hf.space",
+  "stage": "RUNNING",
+  "hardware": "zero-a10g",
+  "deployed_revision": "e941bb411d7225d940bd1a7efe7f82253a980089",
+  "verified_utc": "2026-10-17T10:14:47+00:00",
+  "live_question": "What does a consultation cost, and how long is it?",
+  "live_response_verified": "USD 25 for 20 minutes; fee credited toward an approved project."
+}

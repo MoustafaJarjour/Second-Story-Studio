@@ -1,0 +1,57 @@
+[
+  {
+    "id": "intro",
+    "title": "Overview: an agent-powered business assistant",
+    "text": "This is Second Story Studio, a fictional creative reuse studio in Beirut. Tala is its virtual concierge. This demonstration follows the assignment requirements, showing the business files, identity, router, real model-selected tools, conversation memory, reflection, and the deployed application. All customer details used here are fictional."
+  },
+  {
+    "id": "files",
+    "title": "Required business files and runnable notebook",
+    "text": "The repository includes the actual business summary and a two-page business profile PDF, alongside the main notebook, application, and dependency list. Both business sources are loaded into the system prompt. The profile defines the mission, services, team, and value proposition. The real API key remains in a private environment file; only an empty example is submitted."
+  },
+  {
+    "id": "identity",
+    "title": "Persona and instructions: clearly separated",
+    "text": "Persona describes who Tala is: a warm, practical virtual concierge. Instructions separately define how it must behave. These include grounding facts in the supplied knowledge, asking only for missing lead details, logging unanswered business questions, and reporting tool actions truthfully. The notebook labels these as two distinct prompt components."
+  },
+  {
+    "id": "tools",
+    "title": "Three routes and distinct tool contracts",
+    "text": "The classifier selects general questions, lead collection, or feedback and unanswered-question handling. A dispatcher invokes the matching handler. The model then chooses appropriate tools, and a separate tool dispatcher validates their arguments. The required customer-interest and unanswered-question tools are implemented. A third tool handles customer suggestions without overloading the unanswered-question schema."
+  },
+  {
+    "id": "known",
+    "title": "Live general question: grounded answer, no lead logging",
+    "text": "This is the actual Gradio ChatInterface, connected to OpenAI. A consultation question receives the published price of twenty-five US dollars and duration of twenty minutes. The audit view shows the actual general-question route and no logging tool. Ordinary business questions do not require the customer to provide contact details."
+  },
+  {
+    "id": "lead",
+    "title": "Live lead collection and conversation memory",
+    "text": "The customer requests team follow-up about a chair, keeping the carved back. Tala asks for the missing name and email. Those details arrive in a separate message. The agent retains the earlier project description, calls the customer-interest tool, and confirms the saved record only after a successful tool receipt. The request does not confirm an appointment or send an email."
+  },
+  {
+    "id": "logs",
+    "title": "Unknown question, separate suggestion, and actual logs",
+    "text": "This mixed message asks about an unpublished warranty and suggests Sunday workshops. The model records the unresolved warranty through record feedback, and the workshop suggestion through the separate customer-feedback tool. The evidence view shows actual JSON records and success receipts. The lead record contains the fictional contact details and the chair description from the earlier turn."
+  },
+  {
+    "id": "reflection",
+    "title": "Reflection bonus: original draft and real correction",
+    "text": "Reflection runs before the final reply is displayed. To make correction visible, this controlled test deliberately supplies an incorrect price, duration, and booking promise. The second OpenAI call checks the trusted business instructions and produces a corrected customer-facing reply. Both original and revised text are logged. This flawed draft is explicitly a test input, not a claim that the normal model spontaneously made these mistakes."
+  },
+  {
+    "id": "reset",
+    "title": "New conversation resets short-term memory",
+    "text": "Starting a new conversation clears the visible chat and its private session state. When asked whether it knows the earlier customer name, Tala says that no name has been provided in the new conversation. Previously saved business records remain in the logs; clearing a conversation does not delete them."
+  },
+  {
+    "id": "hosted",
+    "title": "Bonus: the deployed Hugging Face Space",
+    "text": "Here is the real public Hugging Face deployment. It serves the same Gradio assistant and answers a business question using the server-side OpenAI key. The Space is running on ZeroGPU hosting, while model inference remains on OpenAI. An unused startup compatibility function is never called by customer requests, so the chat does not request GPU work."
+  },
+  {
+    "id": "checks",
+    "title": "Verification and complete submission",
+    "text": "The recorded test output shows fifty-two passing offline checks. They cover routing, validation, tool protocols, session isolation, retries, and reflection failures. The notebook also runs its non-network cells successfully. The GitHub submission contains the source, required business artifacts, video, and synthetic evidence. Private credentials and personal customer logs are excluded. This completes the demonstrated checklist, including reflection and a running hosted application."
+  }
+]

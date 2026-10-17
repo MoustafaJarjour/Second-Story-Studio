@@ -1,0 +1,6 @@
+# Preserve source bytes across platforms, including PDF cross-reference offsets.
+* -text
+*.pdf binary
+*.png binary
+*.jpg binary
+*.mp4 binary

@@ -1,0 +1,11 @@
+{
+  "duration_seconds": 294.0,
+  "size_bytes": 6347745,
+  "video": "H.264, 1280x820, 12 fps",
+  "audio": "AAC mono, offline synthetic Microsoft Zira narration",
+  "captions": "Burned-in English and separate WebVTT",
+  "full_decode_exit_code": 0,
+  "key_frame_review": "One decoded frame per chapter, plus full-size chat, log and reflection samples",
+  "recording": "Actual browser screenshots; processing pauses condensed; static evidence held; no desktop or private credentials captured",
+  "sha256": "189db7f3ccad1fe9b2e5fae4f0fce0fac9a9cbcd6cc6c9c9be108834b127b395"
+}
